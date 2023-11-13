@@ -17,7 +17,7 @@
           <!-- 导航 -->
           <ul>
             <li>
-              <a href="#">商城</a>
+              <a href="#" class="text-55px">商城</a>
             </li>
             <li>
               <a href="#">常见问题</a>
@@ -248,7 +248,7 @@
             </div>
             <div class="more-btn">
               <a href="#" class="card-btn-link">
-                <button class="card-btn">立享优惠!</button>
+                <el-button class="card-btn">立享优惠!</el-button>
               </a>
               <button class="add-wishlist">
                 <i class="iconfont icon-plus-circle"></i>
@@ -862,5 +862,48 @@
 </script>
 
 <style scoped>
-
+/*下划线跟随*/
+ul{
+        display: flex;
+        position: initial;
+    }
+    li{
+        position: relative;
+        padding: 1em 2em;
+        font-size: 12px;
+        list-style: none;
+        white-space:nowrap;
+        width: 25%;
+        text-align: center;
+    }
+    li.current_li{
+        list-style-type:none;
+        border-bottom:2px solid red;
+        padding-bottom: 2px;
+    }
+    a:active, a:hover, a.current {
+        color: #ff231c;
+    }
+    li::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        color: #ff231c;
+        background-color: #ff231c;
+        transition: .5s all linear;
+    }
+    li:hover::after{
+        width: 100%;
+    }
+    li::after{
+        left: 100%;     /*选中项上一个下划线收回的方向，从左往右收线*/
+    }
+    li:hover::after{
+        left: 0;      /*选中项下划线出线的方向，从左往右出线*/
+    }
+    li:hover ~ li::after {
+        left: 0;    /*选中项下一个下划线出线的方向，从左往右收线*/
+    }
 </style>
