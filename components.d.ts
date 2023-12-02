@@ -7,17 +7,12 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    AESEncryption: typeof import('./src/components/AESEncryption.vue')['default']
     ElButton: typeof import('element-plus/es')['ElButton']
-    ElIcon: typeof import('element-plus/es')['ElIcon']
-    ElImag: typeof import('element-plus/es')['ElImag']
-    ElImage: typeof import('element-plus/es')['ElImage']
-    ElImagg: typeof import('element-plus/es')['ElImagg']
-    ElImg: typeof import('element-plus/es')['ElImg']
-    ElInput: typeof import('element-plus/es')['ElInput']
-    ElSwitch: typeof import('element-plus/es')['ElSwitch']
     ElTable: typeof import('element-plus/es')['ElTable']
     ElTableColumn: typeof import('element-plus/es')['ElTableColumn']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    NavigationBar: typeof import('./src/components/NavigationBar.vue')['default']
     Table2: typeof import('./src/components/Table2.vue')['default']
     TableDraggable: typeof import('./src/components/TableDraggable.vue')['default']
   }
