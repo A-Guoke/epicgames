@@ -12,10 +12,10 @@
     "@types/node": "^20.8.4",
     "crypto-js": "^4.2.0",
     "element-plus": "^2.3.12",
+    "lodash": "^4.17.21",
     "path": "^0.12.7",
     "pug": "^3.0.2",
     "scss": "^0.2.4",
-    "sortable.js": "^0.3.0",
     "sortablejs": "^1.15.0",
     "vue": "^3.3.4",
     "vuedraggable": "^4.1.0"

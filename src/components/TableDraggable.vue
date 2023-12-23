@@ -21,7 +21,7 @@
       <!-- 表头列 -->
       <el-table-column
         v-for="(item, index) in  tableHeader"
-        :key="item.index"
+        :key="index"
         :prop="item.prop"
         :label="item.label"
       >
@@ -67,7 +67,7 @@ export default {
           name: "孙悟空",
           age: 500,
           home: "花果山",
-          hobby: "吃桃子",
+          hobby: "吃桃",
         },
         {
           id: "2",

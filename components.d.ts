@@ -8,6 +8,7 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     AESEncryption: typeof import('./src/components/AESEncryption.vue')['default']
+    ConuntDown: typeof import('./src/components/ConuntDown.vue')['default']
     ElButton: typeof import('element-plus/es')['ElButton']
     ElTable: typeof import('element-plus/es')['ElTable']
     ElTableColumn: typeof import('element-plus/es')['ElTableColumn']
